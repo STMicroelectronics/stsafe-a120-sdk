@@ -4,8 +4,6 @@ This example demonstrates how to generate an ECC (Elliptic Curve Cryptography) k
 
 The NIST P-256 curve (also known as secp256r1 or prime256v1) is a standardized elliptic curve recommended by NIST for cryptographic use. It provides 128-bit security with relatively small key sizes (256 bits), making it suitable for resource-constrained embedded systems.
 
-![STSAFE-A120_Key_pair_generation_NIST_P256](./STSAFE-A120_Key_pair_generation_NIST_P256.png)
-
 ## Example Flowchart
 
 The following flowchart illustrates the key pair generation and signature verification process:

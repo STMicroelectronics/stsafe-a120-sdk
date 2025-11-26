@@ -4,8 +4,6 @@ This example demonstrates how to generate an EdDSA (Edwards-curve Digital Signat
 
 Edwards-25519, also known as Ed25519, is based on the Curve25519 elliptic curve and provides approximately 128-bit security. It is designed to be fast, secure against timing attacks, and requires no random number generation during the signing process, making it particularly suitable for embedded and IoT applications.
 
-![STSAFE-A120_Key_pair_generation_EDWARDS_25519](./STSAFE-A120_Key_pair_generation_EDWARDS_25519.png)
-
 ## Example Flowchart
 
 The following flowchart illustrates the Ed25519 key pair generation and signature verification process:
