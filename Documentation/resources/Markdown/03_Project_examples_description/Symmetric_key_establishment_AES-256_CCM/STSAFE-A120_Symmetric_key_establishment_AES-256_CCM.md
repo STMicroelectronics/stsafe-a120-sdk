@@ -1,4 +1,4 @@
-# STSAFE-A120_Symmetric_key_establishment_AES-256_CCM{#STSAFE-A120_Symmetric_key_establishment_AES-256_CCM}
+# STSAFE-A120 Symmetric Key Establishment AES-256 CCM {#STSAFE-A120_Symmetric_key_establishment_AES-256_CCM}
 
 This example demonstrates a symmetric key (AES-256 CCM) establishment and usage in STSAFE-A1xx Secure Element.
 It uses the STSAFE Middleware APIs to a establish a key and encrypt then decrypt a message.

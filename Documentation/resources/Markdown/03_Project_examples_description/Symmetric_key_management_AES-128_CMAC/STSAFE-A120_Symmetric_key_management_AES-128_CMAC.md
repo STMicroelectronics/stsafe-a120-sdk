@@ -1,4 +1,4 @@
-# STSAFE-A120_Symmetric_key_management_AES-128_CMAC{#STSAFE-A120_Symmetric_key_management_AES-128_CMAC}
+# STSAFE-A120 Symmetric Key Management AES-128 CMAC {#STSAFE-A120_Symmetric_key_management_AES-128_CMAC}
 
 This example demonstrates a symmetric key (AES-128 CMAC) provisionning and usage in STSAFE-A1xx Secure Element.
 It uses the STSAFE Middleware APIs to a write a key and compute then verify a MAC.

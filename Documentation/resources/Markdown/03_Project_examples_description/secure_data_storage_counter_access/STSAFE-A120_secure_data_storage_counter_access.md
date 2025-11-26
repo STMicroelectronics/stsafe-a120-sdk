@@ -1,4 +1,4 @@
-# STSAFE-A120 Secure Data Storage Counter Access Example {#STSAFE-A120_secure_data_storage_counter_access}
+# STSAFE-A120 Secure Data Storage Counter Access {#STSAFE-A120_secure_data_storage_counter_access}
 
 The STSAFE-A120 is a secure element designed to provide robust data storage and counter management capabilities. In this example, you will learn how to:
 

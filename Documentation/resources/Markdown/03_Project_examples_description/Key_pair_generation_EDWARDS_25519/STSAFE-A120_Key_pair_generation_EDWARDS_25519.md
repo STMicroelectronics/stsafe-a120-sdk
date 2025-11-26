@@ -1,8 +1,10 @@
 # STSAFE-A120 Edwards-25519 Key Pair Generation {#STSAFE-A120_Key_pair_generation_EDWARDS_25519}
 
-This example demonstrates how to generate an EdDSA (Edwards-curve Digital Signature Algorithm) key pair using the Edwards-25519 curve on the STSAFE-A120 secure element. Ed25519 is a modern signature scheme that offers high security, excellent performance, and small key and signature sizes.
+This example demonstrates how to generate an EdDSA (Edwards curve Digital Signature Algorithm) key pair using the Edwards-25519 curve on the STSAFE-A120 secure element.  
+Ed25519 is a modern signature scheme that offers high security, excellent performance, and small key and signature sizes.
 
-Edwards-25519, also known as Ed25519, is based on the Curve25519 elliptic curve and provides approximately 128-bit security. It is designed to be fast, secure against timing attacks, and requires no random number generation during the signing process, making it particularly suitable for embedded and IoT applications.
+The Edwards-25519 curve (also known as Ed25519) is based on the Curve25519 elliptic curve and provides approximately 128-bit security.  
+It is designed to be fast, secure against timing attacks, and requires no random number generation during the signing process, making it particularly suitable for embedded and IoT applications.
 
 ## Example Flowchart
 
@@ -22,7 +24,7 @@ The following flowchart illustrates the Ed25519 key pair generation and signatur
 	:Query asymmetric key table to find available slot;
 	:Generate Edwards-25519 key pair in selected slot;
 	:Retrieve the generated public key;
-	:Create random message and compute SHA-512 hash;
+	:Create random message and compute SHA-256 hash;
 	:Generate EdDSA signature using private key;
 	:Verify signature using platform crypto library;
 	if(Signature valid?) then (Yes)
@@ -45,7 +47,7 @@ Upon execution, the host terminal displays the key generation process and signat
 ----------------------------------------------------------------------------------------------------------------
 -                              STSAFE-A120 EDWARDS-25519 key pair generation                                   -
 ----------------------------------------------------------------------------------------------------------------
-- This example demonstrates how to generate and use a EDWARDS-25519 key pair on a target STSAFE-A120 device   -
+- This example demonstrates how to generate and use a EDWARDS-25519 key pair on a target STSAFE-A120 device    -
 ----------------------------------------------------------------------------------------------------------------
 
  - Initialize target STSAFE-A120
@@ -65,7 +67,7 @@ Upon execution, the host terminal displays the key generation process and signat
   0xA1 0xB2 0xC3 0xD4 0xE5 0xF6 0x07 0x18 0x29 0x3A 0x4B 0x5C 0x6D 0x7E 0x8F 0x90
   0xA1 0xB2 0xC3 0xD4 0xE5 0xF6 0x07 0x18 0x29 0x3A 0x4B 0x5C 0x6D 0x7E 0x8F 0x90
 
- - Verify signature: SUCCESS
+ - STSAFE-A120 verify signature : success
 ```
 
 ## Applicative Scenarios

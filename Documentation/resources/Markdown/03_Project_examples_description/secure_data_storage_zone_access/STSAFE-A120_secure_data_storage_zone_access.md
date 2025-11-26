@@ -1,4 +1,4 @@
-# STSAFE-A120_secure_data_storage_zone_accesses{#STSAFE-A120_secure_data_storage_zone_access}
+# STSAFE-A120 Secure Data Storage Zone Access {#STSAFE-A120_secure_data_storage_zone_access}
 
 This example demonstrates how to makes use of the STSE data storage APIs by performing following accesses/commands to the target STSAFE-A120 device
 - Query STSAFE-A total partition count
