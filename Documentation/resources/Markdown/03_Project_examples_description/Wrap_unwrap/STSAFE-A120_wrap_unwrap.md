@@ -1,4 +1,4 @@
-# STSAFE-A120_wrap_unwrap{#STSAFE-A120_wrap_unwrap}
+# STSAFE-A120 secret or key wrap/unwrap{#STSAFE-A120_wrap_unwrap}
 
 This example demonstrates how how to wrap/unwrap payload using a target STSAFE-A120 device
 

@@ -177,6 +177,8 @@ int main(void) {
         printf(PRINT_GREEN "\n\n\r - Encrypted Message MAC verification : PASS");
     }
 
+    stsafea_close_host_session(&host_session_handler);
+
     while (1) {
         // infinite loop
     }

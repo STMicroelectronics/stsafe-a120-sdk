@@ -1,4 +1,4 @@
-# STSAFE-A120_Hash{#STSAFE-A120_Hash}
+# STSAFE-A120 Hash{#STSAFE-A120_Hash}
 
 This example demonstrates how to performs xxx . 
 

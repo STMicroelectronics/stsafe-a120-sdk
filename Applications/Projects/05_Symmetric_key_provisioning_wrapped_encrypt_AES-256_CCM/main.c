@@ -189,6 +189,8 @@ int main(void) {
         apps_print_hex_buffer(message, 16);
     }
 
+    stsafea_close_host_session(&host_session_handler);
+
     while (1) {
         // infinite loop
     }
