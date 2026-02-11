@@ -18,7 +18,7 @@
 #include "Apps_utils.h"
 
 /* Defines -------------------------------------------------------------------*/
-#define HASH_SIZE(x) (x - x % 16)  /**< Macro to align hash size to 16-byte boundary */
+#define HASH_SIZE(x) (x - x % 16) /**< Macro to align hash size to 16-byte boundary */
 
 /**
  * @brief  Main program entry point - STSAFE-A120 NIST-P256 key pair generation

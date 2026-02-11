@@ -117,20 +117,20 @@ int main(void) {
     printf("\n\r");
 
     /* ## Open Host Session (required for protecting sensitive exchanges over I2C between host and STSAFE-A) */
-	stsafea_session_clear_context(&host_session_handler);
+    stsafea_session_clear_context(&host_session_handler);
 
-	stse_ret = stsafea_open_host_session(
-		&stse_handler,                         /* Target STSafe Handler */
-		&host_session_handler,                 /* pointer to session handler */
-		(uint8_t *)host_keys.host_mac_key,     /* pointer to Host MAC  key to be used by the session */
-		(uint8_t *)host_keys.host_cipher_key); /* pointer to Host cipher key to be used by the session */
-	if (stse_ret != STSE_OK) {
-		printf(PRINT_RED "\n\r - stse_open_host_session ERROR : 0x%04X", stse_ret);
-		if (stse_ret == STSE_SERVICE_SESSION_ERROR) {
-			printf(PRINT_RED "\n\r - Host keys not populated through STSE");
-		}
-		apps_process_error(stse_ret);
-	}
+    stse_ret = stsafea_open_host_session(
+        &stse_handler,                         /* Target STSafe Handler */
+        &host_session_handler,                 /* pointer to session handler */
+        (uint8_t *)host_keys.host_mac_key,     /* pointer to Host MAC  key to be used by the session */
+        (uint8_t *)host_keys.host_cipher_key); /* pointer to Host cipher key to be used by the session */
+    if (stse_ret != STSE_OK) {
+        printf(PRINT_RED "\n\r - stse_open_host_session ERROR : 0x%04X", stse_ret);
+        if (stse_ret == STSE_SERVICE_SESSION_ERROR) {
+            printf(PRINT_RED "\n\r - Host keys not populated through STSE");
+        }
+        apps_process_error(stse_ret);
+    }
 
     /* ## Wrap payload */
     stse_ret = stsafea_wrap_payload(

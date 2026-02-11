@@ -2211,7 +2211,7 @@
         <group>
             <name>STM32CryptoLib</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Middleware\STM32_Cryptographic\interface\cmox_low_level.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Middleware\STM32_Cryptographic\interface\cmox_low_level_template.c</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\..\..\..\Middleware\STM32_Cryptographic\lib\libSTM32Cryptographic_CM4.a</name>
@@ -2354,6 +2354,36 @@
                     </file>
                     <file>
                         <name>$PROJ_DIR$\..\..\..\..\Middleware\STSELib\services\stsafea\stsafea_wrap_unwrap.c</name>
+                    </file>
+                </group>
+                <group>
+                    <name>STSAFE-L</name>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_commands.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_data_partition.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_device_info.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_ecc.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_echo.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_frame_transfer.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_low_power.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_reset.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_timings.c</name>
                     </file>
                 </group>
             </group>

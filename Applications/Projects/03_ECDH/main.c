@@ -25,8 +25,8 @@ const stsafea_aes_128_host_keys_t host_keys = {
     .host_cipher_key = {0x01, 0x23, 0x45, 0x67, 0x89, 0xAB, 0xCD, 0xEF,
                         0x01, 0x23, 0x45, 0x67, 0x89, 0xAB, 0xCD, 0xEF}};
 
-#define ENCRYPT_NO		0x00
-#define ENCRYPT_RSP		0x01
+#define ENCRYPT_NO 0x00
+#define ENCRYPT_RSP 0x01
 
 /**
  * @brief  Main program entry point - STSAFE-A120 ECDH example
@@ -45,13 +45,13 @@ int main(void) {
     PLAT_UI8 establish_key_rsp_encryption_flag = ENCRYPT_NO;
 
     stse_ecc_key_type_t key_type = STSE_ECC_KT_NIST_P_256;
-    static uint8_t host_public_key [] = // NIST P-256 host public key
-    							{0xe2, 0xaa, 0x79, 0x20, 0x16, 0x90, 0xd8, 0x50, 0x3f, 0x79, 0x2b, 0xb8, 0xf5, 0x14, 0x67, 0x3d,
-    							 0x8c, 0x88, 0x85, 0x8a, 0x82, 0xc2, 0xb8, 0xd1, 0xb7, 0xe8, 0x14, 0x53, 0x23, 0x0e, 0xac, 0xbb,
-								 0x7d, 0x25, 0xeb, 0x2c, 0x09, 0xf4, 0xb0, 0x67, 0x20, 0x35, 0xac, 0x0d, 0x14, 0x1e, 0xe6, 0xd1,
-								 0x42, 0x20, 0x1c, 0x21, 0xef, 0xee, 0xb7, 0x87, 0x98, 0xdf, 0xe8, 0x76, 0xae, 0x7d, 0x1a, 0x07};
+    static uint8_t host_public_key[] = // NIST P-256 host public key
+        {0xe2, 0xaa, 0x79, 0x20, 0x16, 0x90, 0xd8, 0x50, 0x3f, 0x79, 0x2b, 0xb8, 0xf5, 0x14, 0x67, 0x3d,
+         0x8c, 0x88, 0x85, 0x8a, 0x82, 0xc2, 0xb8, 0xd1, 0xb7, 0xe8, 0x14, 0x53, 0x23, 0x0e, 0xac, 0xbb,
+         0x7d, 0x25, 0xeb, 0x2c, 0x09, 0xf4, 0xb0, 0x67, 0x20, 0x35, 0xac, 0x0d, 0x14, 0x1e, 0xe6, 0xd1,
+         0x42, 0x20, 0x1c, 0x21, 0xef, 0xee, 0xb7, 0x87, 0x98, 0xdf, 0xe8, 0x76, 0xae, 0x7d, 0x1a, 0x07};
     uint8_t slot_number = 0xFF; // 0FF: ephemeral key slot(ECDHE)
-    							// 0x01 to 0x04 : static key slot (ECDH)
+                                // 0x01 to 0x04 : static key slot (ECDH)
 
     /* - allocate ECDHE buffer sizes according to ECC key type */
     PLAT_UI16 pub_key_size = stse_ecc_info_table[key_type].public_key_size;
@@ -111,20 +111,20 @@ int main(void) {
     }
 
     /* ## Open Host Session (required for protecting sensitive exchanges over I2C between host and STSAFE-A) */
-	stsafea_session_clear_context(&host_session_handler);
+    stsafea_session_clear_context(&host_session_handler);
 
-	stse_ret = stsafea_open_host_session(
-		&stse_handler,                         /* Target STSafe Handler */
-		&host_session_handler,                 /* pointer to session handler */
-		(uint8_t *)host_keys.host_mac_key,     /* pointer to Host MAC  key to be used by the session */
-		(uint8_t *)host_keys.host_cipher_key); /* pointer to Host cipher key to be used by the session */
-	if (stse_ret != STSE_OK) {
-		printf(PRINT_RED "\n\r - stse_open_host_session ERROR : 0x%04X", stse_ret);
-		if (stse_ret == STSE_SERVICE_SESSION_ERROR) {
-			printf("\n\r - Host keys not populated through STSE");
-		}
-		apps_process_error(stse_ret);
-	}
+    stse_ret = stsafea_open_host_session(
+        &stse_handler,                         /* Target STSafe Handler */
+        &host_session_handler,                 /* pointer to session handler */
+        (uint8_t *)host_keys.host_mac_key,     /* pointer to Host MAC  key to be used by the session */
+        (uint8_t *)host_keys.host_cipher_key); /* pointer to Host cipher key to be used by the session */
+    if (stse_ret != STSE_OK) {
+        printf(PRINT_RED "\n\r - stse_open_host_session ERROR : 0x%04X", stse_ret);
+        if (stse_ret == STSE_SERVICE_SESSION_ERROR) {
+            printf("\n\r - Host keys not populated through STSE");
+        }
+        apps_process_error(stse_ret);
+    }
 
     /* ## Establish a shared secret on STSE */
     stse_ret = stse_ecc_establish_shared_secret(&stse_handler, slot_number, key_type, host_public_key, shared_secret);
@@ -140,7 +140,7 @@ int main(void) {
 
     stsafea_close_host_session(&host_session_handler);
 
-	while (1) {
+    while (1) {
         // infinite loop
     }
 

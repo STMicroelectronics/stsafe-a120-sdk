@@ -32,35 +32,35 @@
  * @brief ANSI escape sequences for terminal formatting
  * @{
  */
-#define PRINT_CLEAR_SCREEN "\x1B[1;1H\x1B[2J"  /**< Clear screen and move cursor to home */
-#define PRINT_BLINK        "\x1B[5m"            /**< Enable blinking text */
-#define PRINT_UNDERLINE    "\x1B[4m"            /**< Enable underlined text */
-#define PRINT_BELL         "\a"                 /**< Sound terminal bell */
-#define PRINT_BOLD         "\x1B[1m"            /**< Enable bold text */
-#define PRINT_ITALIC       "\x1B[3m"            /**< Enable italic text */
-#define PRINT_RESET        "\x1B[0m"            /**< Reset all text attributes */
+#define PRINT_CLEAR_SCREEN "\x1B[1;1H\x1B[2J" /**< Clear screen and move cursor to home */
+#define PRINT_BLINK "\x1B[5m"                 /**< Enable blinking text */
+#define PRINT_UNDERLINE "\x1B[4m"             /**< Enable underlined text */
+#define PRINT_BELL "\a"                       /**< Sound terminal bell */
+#define PRINT_BOLD "\x1B[1m"                  /**< Enable bold text */
+#define PRINT_ITALIC "\x1B[3m"                /**< Enable italic text */
+#define PRINT_RESET "\x1B[0m"                 /**< Reset all text attributes */
 /** @defgroup Terminal_Colors Terminal Color Codes
  * @brief ANSI color codes for terminal text
  * @{
  */
 #ifdef DISABLE_PRINT_COLOR
-#define PRINT_BLACK   ""   /**< Black text (disabled) */
-#define PRINT_RED     ""   /**< Red text (disabled) */
-#define PRINT_GREEN   ""   /**< Green text (disabled) */
-#define PRINT_YELLOW  ""   /**< Yellow text (disabled) */
-#define PRINT_BLUE    ""   /**< Blue text (disabled) */
-#define PRINT_MAGENTA ""   /**< Magenta text (disabled) */
-#define PRINT_CYAN    ""   /**< Cyan text (disabled) */
-#define PRINT_WHITE   ""   /**< White text (disabled) */
+#define PRINT_BLACK ""   /**< Black text (disabled) */
+#define PRINT_RED ""     /**< Red text (disabled) */
+#define PRINT_GREEN ""   /**< Green text (disabled) */
+#define PRINT_YELLOW ""  /**< Yellow text (disabled) */
+#define PRINT_BLUE ""    /**< Blue text (disabled) */
+#define PRINT_MAGENTA "" /**< Magenta text (disabled) */
+#define PRINT_CYAN ""    /**< Cyan text (disabled) */
+#define PRINT_WHITE ""   /**< White text (disabled) */
 #else
-#define PRINT_BLACK   "\x1B[30m"   /**< Black text */
-#define PRINT_RED     "\x1B[31m"   /**< Red text */
-#define PRINT_GREEN   "\x1B[32m"   /**< Green text */
-#define PRINT_YELLOW  "\x1B[33m"   /**< Yellow text */
-#define PRINT_BLUE    "\x1B[34m"   /**< Blue text */
-#define PRINT_MAGENTA "\x1B[35m"   /**< Magenta text */
-#define PRINT_CYAN    "\x1B[36m"   /**< Cyan text */
-#define PRINT_WHITE   "\x1B[37m"   /**< White text */
+#define PRINT_BLACK "\x1B[30m"   /**< Black text */
+#define PRINT_RED "\x1B[31m"     /**< Red text */
+#define PRINT_GREEN "\x1B[32m"   /**< Green text */
+#define PRINT_YELLOW "\x1B[33m"  /**< Yellow text */
+#define PRINT_BLUE "\x1B[34m"    /**< Blue text */
+#define PRINT_MAGENTA "\x1B[35m" /**< Magenta text */
+#define PRINT_CYAN "\x1B[36m"    /**< Cyan text */
+#define PRINT_WHITE "\x1B[37m"   /**< White text */
 #endif
 /**
  * @}

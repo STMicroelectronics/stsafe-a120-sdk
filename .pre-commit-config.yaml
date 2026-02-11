@@ -11,6 +11,8 @@ repos:
     rev: v5.0.0
     hooks:
       - id: trailing-whitespace
+        args:
+          - --markdown-linebreak-ext=md
         exclude: Middleware/|Platform/Core/CMSIS/|Documentation
       - id: end-of-file-fixer
         exclude: Middleware/|Platform/Core/CMSIS/|Documentation

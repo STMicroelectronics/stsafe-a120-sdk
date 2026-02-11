@@ -405,9 +405,9 @@
           <GroupName>Middleware/STM32CryptoLib</GroupName>
           <Files>
             <File>
-              <FileName>cmox_low_level.c</FileName>
+              <FileName>cmox_low_level_template.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Middleware\STM32_Cryptographic\interface\cmox_low_level.c</FilePath>
+              <FilePath>..\..\..\..\Middleware\STM32_Cryptographic\interface\cmox_low_level_template.c</FilePath>
             </File>
             <File>
               <FileName>libSTM32Cryptographic_CM4.a</FileName>
@@ -638,6 +638,56 @@
               <FileName>stsafea_wrap_unwrap.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\Middleware\STSELib\services\stsafea\stsafea_wrap_unwrap.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Middleware/STSELib/Services/STSAFE-L</GroupName>
+          <Files>
+            <File>
+              <FileName>stsafel_commands.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_commands.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_data_partition.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_data_partition.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_device_info.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_device_info.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_ecc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_ecc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_echo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_echo.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_frame_transfer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_frame_transfer.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_low_power.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_low_power.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_reset.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_reset.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_timings.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_timings.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1145,9 +1195,9 @@
           <GroupName>Middleware/STM32CryptoLib</GroupName>
           <Files>
             <File>
-              <FileName>cmox_low_level.c</FileName>
+              <FileName>cmox_low_level_template.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Middleware\STM32_Cryptographic\interface\cmox_low_level.c</FilePath>
+              <FilePath>..\..\..\..\Middleware\STM32_Cryptographic\interface\cmox_low_level_template.c</FilePath>
             </File>
             <File>
               <FileName>libSTM32Cryptographic_CM4.a</FileName>
@@ -1378,6 +1428,56 @@
               <FileName>stsafea_wrap_unwrap.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\Middleware\STSELib\services\stsafea\stsafea_wrap_unwrap.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Middleware/STSELib/Services/STSAFE-L</GroupName>
+          <Files>
+            <File>
+              <FileName>stsafel_commands.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_commands.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_data_partition.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_data_partition.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_device_info.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_device_info.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_ecc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_ecc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_echo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_echo.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_frame_transfer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_frame_transfer.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_low_power.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_low_power.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_reset.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_reset.c</FilePath>
+            </File>
+            <File>
+              <FileName>stsafel_timings.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\Middleware\STSELib\services\stsafel\stsafel_timings.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -12,4 +12,4 @@ Dependency index between groups of examples:
 - 2: Configuration examples without any dependency
 - 3: Examples with group 2 dependency
 - 4: Configuration examples without any dependency
-- 5: Examples with dependency of groups 2 & 4 
+- 5: Examples with dependency of groups 2 & 4

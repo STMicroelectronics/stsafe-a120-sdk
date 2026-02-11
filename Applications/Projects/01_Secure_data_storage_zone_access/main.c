@@ -18,8 +18,8 @@
 #include "Apps_utils.h"
 
 /* Defines -------------------------------------------------------------------*/
-#define READ_BUFFER_SIZE 100  /**< Size of read buffer for zone data */
-#define RANDOM_SIZE 100       /**< Size of random data to write to zone */
+#define READ_BUFFER_SIZE 100 /**< Size of read buffer for zone data */
+#define RANDOM_SIZE 100      /**< Size of random data to write to zone */
 
 /**
  * @brief  Main program entry point - STSAFE-A120 Secure data storage zone access
