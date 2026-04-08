@@ -1,7 +1,7 @@
 # STSAFE-A Software Development Kit
 
-The **STSAFE-A Software Development Kit** offers developers a collection of application examples demonstrating the use of the STSAFE-A secure element product family from STMicroelectronics.  
-These examples can serve as software reference implementations for integrating STSAFE-A120 devices on host microcontroller platforms.
+The **STSAFE-A Software Development Kit** offers developers a collection of application examples demonstrating the use of the STSAFE-A secure element from STMicroelectronics.
+This SDK serves as software reference implementations for integrating [STSELib](https://github.com/STMicroelectronics/STSELib) and STSAFE-A on host microcontroller platforms.
 
 ```
 +------------------------+---------------------------------------------------------------------+
@@ -42,6 +42,7 @@ The following hardware (HW) and software (SW) prerequisites are required to work
     - [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)  
     - [Keil uVision 5.37](https://www.st.com/en/partner-products-and-services/arm-keil-mdk.html)  
     - [IAR EWARM 9.40.1](https://www.st.com/en/partner-products-and-services/iar-embedded-workbench-for-arm.html)
+      
   - [X-CUBE-CRYPTOLIB 4.5.0](https://www.st.com/en/embedded-software/x-cube-cryptolib.html)
 
 Please refer to the STSAFE-A SDK wiki pages for information on how to get started with the package.
