@@ -1,0 +1,30 @@
+[Dd]ebug/
+[Rr]elease/
+[Oo]ut/
+[Hh]tml/
+.settings/
+.vscode/
+/.metadata/
+__html/
+__latex/
+__xml/
+__out/
+__rtf/
+__docman
+__docbook
+*.chm
+*.exe
+*.bak
+*.prefs
+*.launch
+.settings/
+.vscode/
+*.xml
+/.metadata/
+inline_umlgraph_cache_all.pu
+
+# Linux build artifacts
+build/
+
+# CodeQL
+_codeql_detected_source_root
