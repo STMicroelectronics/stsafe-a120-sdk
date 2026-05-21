@@ -39,10 +39,12 @@
 									<listOptionValue builtIn="false" value="../../../../../"/>
 									<listOptionValue builtIn="false" value="../../../../../Middleware/STM32_Cryptographic/include"/>
 									<listOptionValue builtIn="false" value="../../../../../Middleware/STSELib"/>
-									<listOptionValue builtIn="false" value="../../../../../Platform"/>
-									<listOptionValue builtIn="false" value="../../../../../Platform/Core/CMSIS/Include"/>
-									<listOptionValue builtIn="false" value="../../../../../Platform/Core/CMSIS/Device/ST/STM32L4xx/Include"/>
-									<listOptionValue builtIn="false" value="../../../../../Platform/STSELib"/>
+									<listOptionValue builtIn="false" value="../../../../../stse-host-platform"/>
+									<listOptionValue builtIn="false" value="../../../../../stse-host-platform/Core/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="../../../../../stse-host-platform/Core/CMSIS/Device/ST/STM32L4xx/Include"/>
+									<listOptionValue builtIn="false" value="../../../../../stse-host-platform/STSELib"/>
+									<listOptionValue builtIn="false" value="../../../../../stse-crypto-platform"/>
+									<listOptionValue builtIn="false" value="../../../../../stse-crypto-platform/STSELib"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.definedsymbols.984179226" name="Define symbols (-D)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.definedsymbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__VFP_FP__"/>
@@ -56,7 +58,7 @@
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level.83150681" name="Optimization level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level" useByScannerDiscovery="false"/>
 							</tool>
 							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.444382358" name="MCU GCC Linker" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker">
-								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script.1302568999" name="Linker Script (-T)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script" value="..\..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Source\gcc\linker\STM32L452RETX_FLASH.ld" valueType="string"/>
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script.1302568999" name="Linker Script (-T)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script" value="..\..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Source\gcc\linker\STM32L452RETX_FLASH.ld" valueType="string"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.libraries.653097683" name="Libraries (-l)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.libraries" valueType="libs">
 									<listOptionValue builtIn="false" value="STM32Cryptographic_CM4"/>
 								</option>
@@ -83,7 +85,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="Platform/Core/CMSIS/Device/ST/STM32L4xx/Source/arm|Platform/Core/CMSIS/Device/ST/STM32L4xx/Source/iar|Middleware/STM32_Cryptographic/legacy_v3" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="stse-host-platform/Core/CMSIS/Device/ST/STM32L4xx/Source/arm|stse-host-platform/Core/CMSIS/Device/ST/STM32L4xx/Source/iar|Middleware/STM32_Cryptographic/legacy_v3" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -125,10 +127,12 @@
 									<listOptionValue builtIn="false" value="../../../../../"/>
 									<listOptionValue builtIn="false" value="../../../../../Middleware/STM32_Cryptographic/include"/>
 									<listOptionValue builtIn="false" value="../../../../../Middleware/STSELib"/>
-									<listOptionValue builtIn="false" value="../../../../../Platform"/>
-									<listOptionValue builtIn="false" value="../../../../../Platform/Core/CMSIS/Include"/>
-									<listOptionValue builtIn="false" value="../../../../../Platform/Core/CMSIS/Device/ST/STM32L4xx/Include"/>
-									<listOptionValue builtIn="false" value="../../../../../Platform/STSELib"/>
+									<listOptionValue builtIn="false" value="../../../../../stse-host-platform"/>
+									<listOptionValue builtIn="false" value="../../../../../stse-host-platform/Core/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="../../../../../stse-host-platform/Core/CMSIS/Device/ST/STM32L4xx/Include"/>
+									<listOptionValue builtIn="false" value="../../../../../stse-host-platform/STSELib"/>
+									<listOptionValue builtIn="false" value="../../../../../stse-crypto-platform"/>
+									<listOptionValue builtIn="false" value="../../../../../stse-crypto-platform/STSELib"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.definedsymbols.1350051197" name="Define symbols (-D)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.definedsymbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__VFP_FP__"/>
@@ -141,7 +145,7 @@
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level.712019253" name="Optimization level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level" useByScannerDiscovery="false"/>
 							</tool>
 							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.1977387039" name="MCU GCC Linker" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker">
-								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script.1804303422" name="Linker Script (-T)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script" useByScannerDiscovery="false" value="..\..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Source\gcc\linker\STM32L452RETX_FLASH.ld" valueType="string"/>
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script.1804303422" name="Linker Script (-T)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script" useByScannerDiscovery="false" value="..\..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Source\gcc\linker\STM32L452RETX_FLASH.ld" valueType="string"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.libraries.788343698" name="Libraries (-l)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.libraries" useByScannerDiscovery="false" valueType="libs">
 									<listOptionValue builtIn="false" value="STM32Cryptographic_CM4"/>
 								</option>
@@ -168,7 +172,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="Platform/Core/CMSIS/Device/ST/STM32L4xx/Source/arm|Platform/Core/CMSIS/Device/ST/STM32L4xx/Source/iar|Middleware/STM32_Cryptographic/legacy_v3" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="stse-host-platform/Core/CMSIS/Device/ST/STM32L4xx/Source/arm|stse-host-platform/Core/CMSIS/Device/ST/STM32L4xx/Source/iar|Middleware/STM32_Cryptographic/legacy_v3" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

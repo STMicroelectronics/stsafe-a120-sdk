@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>__VFP_FP__, STM32L452xx, DEBUG</Define>
               <Undefine></Undefine>
-              <IncludePath>..\;..\..\..\Apps_utils;..\..\..\..\;..\..\..\..\Middleware\STM32_Cryptographic\include;..\..\..\..\Middleware\STSELib;..\..\..\..\Platform;..\..\..\..\Platform\Core\CMSIS\Include;..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Include;..\..\..\..\Platform\STSELib</IncludePath>
+              <IncludePath>..\;..\..\..\Apps_utils;..\..\..\..\;..\..\..\..\Middleware\STM32_Cryptographic\include;..\..\..\..\Middleware\STSELib;..\..\..\..\stse-host-platform;..\..\..\..\stse-host-platform\Core\CMSIS\Include;..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Include;..\..\..\..\stse-host-platform\STSELib;..\..\..\..\stse-crypto-platform;..\..\..\..\stse-crypto-platform\STSELib</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -692,102 +692,107 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Plaform/Core</GroupName>
+          <GroupName>stse-host-platform/Core</GroupName>
           <Files>
             <File>
               <FileName>system_stm32l4xx.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Source\system_stm32l4xx.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Source\system_stm32l4xx.c</FilePath>
             </File>
             <File>
               <FileName>startup_stm32l452xx.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Source\arm\startup_stm32l452xx.s</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Source\arm\startup_stm32l452xx.s</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>Plaform/Drivers</GroupName>
+          <GroupName>stse-host-platform/Drivers</GroupName>
           <Files>
             <File>
               <FileName>crc16.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Drivers\crc16\crc16.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Drivers\crc16\crc16.c</FilePath>
             </File>
             <File>
               <FileName>delay_ms.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Drivers\delay_ms\delay_ms.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Drivers\delay_ms\delay_ms.c</FilePath>
             </File>
             <File>
               <FileName>delay_us.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Drivers\delay_us\delay_us.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Drivers\delay_us\delay_us.c</FilePath>
             </File>
             <File>
               <FileName>I2C.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Drivers\i2c\I2C.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Drivers\i2c\I2C.c</FilePath>
             </File>
             <File>
               <FileName>rng.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Drivers\rng\rng.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Drivers\rng\rng.c</FilePath>
             </File>
             <File>
               <FileName>uart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Drivers\uart\uart.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Drivers\uart\uart.c</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>Plaform/STSELib</GroupName>
+          <GroupName>stse-host-platform/STSELib</GroupName>
           <Files>
-            <File>
-              <FileName>stse_platform_aes.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_aes.c</FilePath>
-            </File>
             <File>
               <FileName>stse_platform_crc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_crc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stse_platform_crypto_init.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_crypto_init.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\STSELib\stse_platform_crc.c</FilePath>
             </File>
             <File>
               <FileName>stse_platform_delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>stse_platform_ecc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_ecc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stse_platform_hash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_hash.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\STSELib\stse_platform_delay.c</FilePath>
             </File>
             <File>
               <FileName>stse_platform_power.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_power.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\STSELib\stse_platform_power.c</FilePath>
             </File>
             <File>
               <FileName>stse_platform_random.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_random.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\STSELib\stse_platform_random.c</FilePath>
             </File>
             <File>
               <FileName>stse_platform_i2c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_i2c.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\STSELib\stse_platform_i2c.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>stse-crypto-platform/STSELib</GroupName>
+          <Files>
+            <File>
+              <FileName>stse_platform_aes.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\stse-crypto-platform\STSELib\stse_platform_aes.c</FilePath>
+            </File>
+            <File>
+              <FileName>stse_platform_crypto_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\stse-crypto-platform\STSELib\stse_platform_crypto_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>stse_platform_ecc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\stse-crypto-platform\STSELib\stse_platform_ecc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stse_platform_hash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\stse-crypto-platform\STSELib\stse_platform_hash.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1130,7 +1135,7 @@
               <MiscControls></MiscControls>
               <Define>__VFP_FP__, STM32L452xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\;..\..\..\Apps_utils;..\..\..\..\;..\..\..\..\Middleware\STM32_Cryptographic\include;..\..\..\..\Middleware\STSELib;..\..\..\..\Platform;..\..\..\..\Platform\Core\CMSIS\Include;..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Include;..\..\..\..\Platform\STSELib</IncludePath>
+              <IncludePath>..\;..\..\..\Apps_utils;..\..\..\..\;..\..\..\..\Middleware\STM32_Cryptographic\include;..\..\..\..\Middleware\STSELib;..\..\..\..\stse-host-platform;..\..\..\..\stse-host-platform\Core\CMSIS\Include;..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Include;..\..\..\..\stse-host-platform\STSELib;..\..\..\..\stse-crypto-platform;..\..\..\..\stse-crypto-platform\STSELib</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1482,102 +1487,107 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Plaform/Core</GroupName>
+          <GroupName>stse-host-platform/Core</GroupName>
           <Files>
             <File>
               <FileName>system_stm32l4xx.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Source\system_stm32l4xx.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Source\system_stm32l4xx.c</FilePath>
             </File>
             <File>
               <FileName>startup_stm32l452xx.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Source\arm\startup_stm32l452xx.s</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Source\arm\startup_stm32l452xx.s</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>Plaform/Drivers</GroupName>
+          <GroupName>stse-host-platform/Drivers</GroupName>
           <Files>
             <File>
               <FileName>crc16.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Drivers\crc16\crc16.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Drivers\crc16\crc16.c</FilePath>
             </File>
             <File>
               <FileName>delay_ms.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Drivers\delay_ms\delay_ms.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Drivers\delay_ms\delay_ms.c</FilePath>
             </File>
             <File>
               <FileName>delay_us.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Drivers\delay_us\delay_us.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Drivers\delay_us\delay_us.c</FilePath>
             </File>
             <File>
               <FileName>I2C.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Drivers\i2c\I2C.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Drivers\i2c\I2C.c</FilePath>
             </File>
             <File>
               <FileName>rng.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Drivers\rng\rng.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Drivers\rng\rng.c</FilePath>
             </File>
             <File>
               <FileName>uart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\Drivers\uart\uart.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\Drivers\uart\uart.c</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>Plaform/STSELib</GroupName>
+          <GroupName>stse-host-platform/STSELib</GroupName>
           <Files>
-            <File>
-              <FileName>stse_platform_aes.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_aes.c</FilePath>
-            </File>
             <File>
               <FileName>stse_platform_crc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_crc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stse_platform_crypto_init.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_crypto_init.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\STSELib\stse_platform_crc.c</FilePath>
             </File>
             <File>
               <FileName>stse_platform_delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>stse_platform_ecc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_ecc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stse_platform_hash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_hash.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\STSELib\stse_platform_delay.c</FilePath>
             </File>
             <File>
               <FileName>stse_platform_power.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_power.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\STSELib\stse_platform_power.c</FilePath>
             </File>
             <File>
               <FileName>stse_platform_random.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_random.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\STSELib\stse_platform_random.c</FilePath>
             </File>
             <File>
               <FileName>stse_platform_i2c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\Platform\STSELib\stse_platform_i2c.c</FilePath>
+              <FilePath>..\..\..\..\stse-host-platform\STSELib\stse_platform_i2c.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>stse-crypto-platform/STSELib</GroupName>
+          <Files>
+            <File>
+              <FileName>stse_platform_aes.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\stse-crypto-platform\STSELib\stse_platform_aes.c</FilePath>
+            </File>
+            <File>
+              <FileName>stse_platform_crypto_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\stse-crypto-platform\STSELib\stse_platform_crypto_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>stse_platform_ecc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\stse-crypto-platform\STSELib\stse_platform_ecc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stse_platform_hash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\stse-crypto-platform\STSELib\stse_platform_hash.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -1,3 +1,9 @@
 [submodule "Middleware/STSELib"]
 	path = Middleware/STSELib
 	url = https://github.com/STMicroelectronics/STSELib.git
+[submodule "stse-host-platform"]
+	path = stse-host-platform
+	url = https://github.com/STMicroelectronics/stse-host-platforms.git
+[submodule "stse-crypto-platform"]
+	path = stse-crypto-platform
+	url = https://github.com/STMicroelectronics/stse-crypto-platforms.git

@@ -40,9 +40,14 @@
 			<locationURI>PARENT-4-PROJECT_LOC/Middleware</locationURI>
 		</link>
 		<link>
-			<name>Platform</name>
+			<name>stse-host-platform</name>
 			<type>2</type>
-			<locationURI>PARENT-4-PROJECT_LOC/Platform</locationURI>
+			<locationURI>PARENT-4-PROJECT_LOC/stse-host-platform</locationURI>
+		</link>
+		<link>
+			<name>stse-crypto-platform</name>
+			<type>2</type>
+			<locationURI>PARENT-4-PROJECT_LOC/stse-crypto-platform</locationURI>
 		</link>
 		<link>
 			<name>main.c</name>

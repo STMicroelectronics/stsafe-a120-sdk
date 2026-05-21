@@ -355,10 +355,12 @@
                     <state>$PROJ_DIR$\..\..\..\..\</state>
                     <state>$PROJ_DIR$\..\..\..\..\Middleware\STM32_Cryptographic\include</state>
                     <state>$PROJ_DIR$\..\..\..\..\Middleware\STSELib</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Platform</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Platform\Core\CMSIS\Include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Platform\STSELib</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-host-platform</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-host-platform\Core\CMSIS\Include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-host-platform\STSELib</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-crypto-platform</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-crypto-platform\STSELib</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -775,7 +777,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$\..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Source\iar\linker\stm32l452xx_flash.icf</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Source\iar\linker\stm32l452xx_flash.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -1448,10 +1450,12 @@
                     <state>$PROJ_DIR$\..\..\..\..\</state>
                     <state>$PROJ_DIR$\..\..\..\..\Middleware\STM32_Cryptographic\include</state>
                     <state>$PROJ_DIR$\..\..\..\..\Middleware\STSELib</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Platform</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Platform\Core\CMSIS\Include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Platform\STSELib</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-host-platform</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-host-platform\Core\CMSIS\Include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-host-platform\STSELib</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-crypto-platform</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-crypto-platform\STSELib</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1868,7 +1872,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$\..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Source\iar\linker\stm32l452xx_flash.icf</state>
+                    <state>$PROJ_DIR$\..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Source\iar\linker\stm32l452xx_flash.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -2200,7 +2204,7 @@
             <name>$PROJ_DIR$\..\main.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Source\iar\startup_stm32l452xx.s</name>
+            <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Source\iar\startup_stm32l452xx.s</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\stse_conf.h</name>
@@ -2390,65 +2394,71 @@
         </group>
     </group>
     <group>
-        <name>Platform</name>
+        <name>stse-host-platform</name>
         <group>
             <name>Core</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\Core\CMSIS\Device\ST\STM32L4xx\Source\system_stm32l4xx.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\Core\CMSIS\Device\ST\STM32L4xx\Source\system_stm32l4xx.c</name>
             </file>
         </group>
         <group>
             <name>Drivers</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\Drivers\crc16\crc16.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\Drivers\crc16\crc16.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\Drivers\delay_ms\delay_ms.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\Drivers\delay_ms\delay_ms.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\Drivers\delay_us\delay_us.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\Drivers\delay_us\delay_us.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\Drivers\i2c\I2C.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\Drivers\i2c\I2C.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\Drivers\rng\rng.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\Drivers\rng\rng.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\Drivers\uart\uart.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\Drivers\uart\uart.c</name>
             </file>
         </group>
         <group>
             <name>STSELib</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\STSELib\stse_platform_aes.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\STSELib\stse_platform_crc.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\STSELib\stse_platform_crc.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\STSELib\stse_platform_delay.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\STSELib\stse_platform_crypto_init.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\STSELib\stse_platform_generic.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\STSELib\stse_platform_delay.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\STSELib\stse_platform_i2c.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\STSELib\stse_platform_ecc.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\STSELib\stse_platform_power.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\STSELib\stse_platform_generic.h</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-host-platform\STSELib\stse_platform_random.c</name>
+            </file>
+        </group>
+    </group>
+    <group>
+        <name>stse-crypto-platform</name>
+        <group>
+            <name>STSELib</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\..\stse-crypto-platform\STSELib\stse_platform_aes.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\STSELib\stse_platform_hash.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-crypto-platform\STSELib\stse_platform_crypto_init.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\STSELib\stse_platform_i2c.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-crypto-platform\STSELib\stse_platform_ecc.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\STSELib\stse_platform_power.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\..\Platform\STSELib\stse_platform_random.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\stse-crypto-platform\STSELib\stse_platform_hash.c</name>
             </file>
         </group>
     </group>
